@@ -1,34 +1,21 @@
 {
-  "name": "mkfr",
-  "version": "1.0.0",
-  "description": "",
+  "name": "mkbdfr-website",
+  "version": "2.0.0",
+  "description": "Mechanical keyboard France website",
   "main": "index.js",
+  "repository": "git@github.com:LucasCtrl/mkbdfr-website",
+  "author": "LucasCtrl <lucasalt@protonmail.com>",
+  "license": "MIT",
+  "private": true,
   "scripts": {
-    "chk:data": "node ./scripts/check-keebs-data.js",
-    "watchscss": "node scripts/watch-scss.js",
-    "eleventyServe": "eleventy --serve",
-    "serve": "npm-run-all --parallel eleventyServe watchscss",
-    "prettier": "prettier -c ./src/**/*.*",
-    "prettier:fix": "prettier -c ./src/**/*.* --write",
-    "build": "eleventy && cp _redirects dist/_redirects"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@11ty/eleventy": "^1.0.1"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
   },
   "dependencies": {
-    "@11ty/eleventy-plugin-rss": "^1.2.0",
-    "ajv": "^8.11.0",
-    "autoprefixer": "^10.4.8",
-    "clean-css": "^5.3.1",
-    "cross-env": "^7.0.3",
-    "luxon": "^3.0.1",
-    "node-sass": "^7.0.1",
-    "node-watch": "^0.7.3",
-    "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.16",
-    "prettier": "^2.7.1",
-    "sharp": "^0.30.7"
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "^4.13.1",
+    "tailwindcss": "^3.4.7"
   }
 }
