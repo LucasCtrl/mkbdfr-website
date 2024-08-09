@@ -10,12 +10,12 @@ guideEntries.sort((entryA, entryB) => Date.parse(entryA.data.publishedDate) - Da
 
 ---
 
-<section id="objectifs" class="flex flex-col items-center py-16">
+<section id="objectifs" class="flex flex-col items-center px-52 py-16">
   <h2 class="text-3xl font-bold">Guides</h2>
   <div class="grid grid-cols-3 pt-8">
     { guideEntries.map(guideEntry => (
       <div class="flex flex-col px-4">
-        <Image src={guideEntry.data.img} alt={guideEntry.data.title} class="max-h-60" />
+        <Image src={guideEntry.data.img} alt={guideEntry.data.title} class="max-h-32" />
         <h3 class="text-2xl font-bold text-center py-2">{guideEntry.data.title}</h3>
         <p>{guideEntry.body}</p>
       </div>
