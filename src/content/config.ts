@@ -1,4 +1,13 @@
-import { z, defineCollection } from 'astro:content';
+import { defineCollection, z } from 'astro:content';
+import { file } from 'astro/loaders';
+
+const objectiveCollection = defineCollection({
+  loader: file('src/data/objectives.json'),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+  }),
+});
 
 const guideCollection = defineCollection({
   schema: ({ image }) =>
@@ -14,4 +23,5 @@ const guideCollection = defineCollection({
 
 export const collections = {
   guides: guideCollection,
+  objectives: objectiveCollection,
 };

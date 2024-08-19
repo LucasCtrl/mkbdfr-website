@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "Partage de connaissance",
+    "description": "La communauté vise à rassembler les passionnés de claviers mécaniques pour partager leurs connaissances, expériences et conseils. Cela inclut des discussions sur les différents types de switches, les matériaux utilisés pour les keycaps, et les meilleures pratiques pour l'assemblage et la personnalisation des claviers mécaniques."
+  },
+  {
+    "id": 2,
+    "title": "Organiser des rencontres",
+    "description": "Organiser et promouvoir des événements, tels que des meetups et des ateliers, permet aux membres de se rencontrer en personne, d'échanger des idées, et de découvrir de nouveaux produits. Ces événements sont aussi l'occasion de tester des claviers et des composants que l'on ne peut pas facilement trouver dans les magasins."
+  },
+  {
+    "id": 3,
+    "title": "Promouvoir les claviers mécaniques",
+    "description": "La communauté s'efforce de sensibiliser davantage de personnes à la qualité et aux avantages des claviers mécaniques par rapport aux claviers traditionnels. Cela inclut la promotion de projets de groupes (group buys) pour des pièces spécifiques, la mise en avant de designers et fabricants locaux, ainsi que la création de contenu éducatif en français pour aider les nouveaux venus à se lancer dans le monde des claviers mécaniques."
+  }
+
+]
