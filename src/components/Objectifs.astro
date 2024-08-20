@@ -1,9 +1,11 @@
 ---
 import { getCollection } from "astro:content";
+import Section from "./Section.astro"
+
 const allObjectives = await getCollection('objectives')
 ---
 
-<section id="objectifs" class="flex flex-col items-center px-52 py-16 bg-orange-200">
+<Section id="objectives" bgColor="dark" style="flex flex-col items-center">
   <h2 class="text-3xl font-bold">Objectifs</h2>
   <div class="grid grid-cols-3 pt-8">
     { allObjectives.map(objective =>(
@@ -13,4 +15,4 @@ const allObjectives = await getCollection('objectives')
       </div>
     ))}
   </div>
-</section>
+</Section>

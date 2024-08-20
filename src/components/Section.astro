@@ -1,0 +1,20 @@
+---
+interface Props {
+  id: string,
+  bgColor: "dark" | "light",
+  style: string,
+}
+
+const { id, style, bgColor } = Astro.props
+---
+
+<section
+  id={id}
+  class={`
+    px-52 py-16
+    ${bgColor == "dark" ? "bg-orange-200" : "bg-orange-100"}
+    ${style}
+  `}
+>
+  <slot />
+</section>
